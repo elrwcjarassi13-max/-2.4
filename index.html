@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Premium Call Center Operations Dashboard</title>
+<title>Premium Call Center Operations Dashboard - 18/11/2026</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -12,137 +12,126 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Prompt',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#f7fbff,#e5f4ff,#fffef6);
-    padding:20px;
-    color:#12355b;
+background:linear-gradient(135deg,#f7fbff,#e5f4ff,#fffef6);
+padding:20px;
+color:#12355b;
 }
 
 .dashboard{
-    max-width:1800px;
-    margin:auto;
+max-width:1800px;
+margin:auto;
 }
 
 .header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-    background:white;
-    border-radius:20px;
-    padding:20px 30px;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+background:white;
+border-radius:20px;
+padding:20px 30px;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
 }
 
 .header h1{
-    font-size:42px;
-    color:#0f3b80;
-}
-
-.header p{
-    color:#5c7ea5;
+font-size:42px;
+color:#0f3b80;
 }
 
 .live{
-    background:#0f6fff;
-    color:white;
-    padding:15px 25px;
-    border-radius:15px;
+background:#0f6fff;
+color:white;
+padding:15px 25px;
+border-radius:15px;
 }
 
 .kpi-grid{
-    display:grid;
-    grid-template-columns:repeat(7,1fr);
-    gap:15px;
-    margin-bottom:20px;
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:15px;
+margin-bottom:20px;
 }
 
 .kpi-card{
-    background:white;
-    border-radius:18px;
-    padding:18px;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
+background:white;
+border-radius:18px;
+padding:18px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .kpi-title{
-    font-size:14px;
-    color:#6b7b93;
+font-size:14px;
+color:#6b7b93;
 }
 
 .kpi-value{
-    font-size:42px;
-    font-weight:700;
-    color:#003e8a;
+font-size:42px;
+font-weight:700;
+color:#003e8a;
 }
 
 .section-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:20px;
-    margin-bottom:20px;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:20px;
+margin-bottom:20px;
 }
 
 .card{
-    background:white;
-    border-radius:20px;
-    padding:20px;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
+background:white;
+border-radius:20px;
+padding:20px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .canvas-box{
-    height:300px;
-    position:relative;
+height:300px;
+position:relative;
 }
 
 .lower-grid{
-    display:grid;
-    grid-template-columns:1fr 1.5fr 1fr;
-    gap:20px;
+display:grid;
+grid-template-columns:1fr 1.6fr 1fr;
+gap:20px;
 }
 
 table{
-    width:100%;
-    border-collapse:collapse;
+width:100%;
+border-collapse:collapse;
 }
 
 thead{
-    background:#0f6fff;
-    color:white;
+background:#0f6fff;
+color:white;
 }
 
 th,td{
-    padding:12px;
+padding:12px;
+text-align:left;
 }
 
 tbody tr:nth-child(even){
-    background:#f5f9ff;
+background:#f7fbff;
 }
 
 .alert-dot{
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    display:inline-block;
-    margin-right:10px;
+width:16px;
+height:16px;
+border-radius:50%;
+display:inline-block;
+margin-right:8px;
 }
 
-.red{
-    background:red;
-}
-
-.yellow{
-    background:gold;
-}
-
-.blue{
-    background:dodgerblue;
-}
+.red{background:#ff4d4f;}
+.yellow{background:#ffd43b;}
+.blue{background:#1b8fff;}
 
 </style>
 </head>
@@ -154,12 +143,12 @@ tbody tr:nth-child(even){
 <div class="header">
 <div>
 <h1>📞 Premium Call Center Operations Dashboard</h1>
-<p>Resolve Case Monitoring Dashboard</p>
+<p>Resolve Case Monitoring Dashboard • 18/11/2026</p>
 </div>
 
 <div class="live">
 LIVE<br>
-Updated
+18 Nov 2026
 </div>
 </div>
 
@@ -167,22 +156,22 @@ Updated
 
 <div class="kpi-card">
 <div class="kpi-title">Total Cases</div>
-<div class="kpi-value">22</div>
+<div class="kpi-value">27</div>
 </div>
 
 <div class="kpi-card">
 <div class="kpi-title">Open Cases</div>
-<div class="kpi-value">18</div>
+<div class="kpi-value">27</div>
 </div>
 
 <div class="kpi-card">
-<div class="kpi-title">Closed</div>
-<div class="kpi-value">4</div>
+<div class="kpi-title">Critical Age</div>
+<div class="kpi-value">6</div>
 </div>
 
 <div class="kpi-card">
-<div class="kpi-title">Overdue</div>
-<div class="kpi-value">7</div>
+<div class="kpi-title">Max Days</div>
+<div class="kpi-value">15</div>
 </div>
 
 <div class="kpi-card">
@@ -191,13 +180,13 @@ Updated
 </div>
 
 <div class="kpi-card">
-<div class="kpi-title">Follow Up</div>
-<div class="kpi-value">28</div>
+<div class="kpi-title">Insurers</div>
+<div class="kpi-value">10</div>
 </div>
 
 <div class="kpi-card">
-<div class="kpi-title">SLA</div>
-<div class="kpi-value">68%</div>
+<div class="kpi-title">SLA Risk</div>
+<div class="kpi-value">22%</div>
 </div>
 
 </div>
@@ -231,51 +220,57 @@ Updated
 
 <div class="card">
 <h3>Owner Leaderboard</h3>
+
 <ol>
-<li>Jarassri Oncham (4)</li>
-<li>Khadiyoh Hayidimae (4)</li>
-<li>Surisa Kiddee (3)</li>
-<li>Supaporn Chuntibut (3)</li>
+<li>Khadiyoh Hayidimae</li>
+<li>Jarassri Oncham</li>
+<li>Wanphen Soongying</li>
+<li>Supaporn Chuntibut</li>
+<li>Surisa Kiddee</li>
 </ol>
+
 </div>
 
 <div class="card">
+
 <h3>Priority Cases</h3>
 
 <table>
 
 <thead>
 <tr>
-<th>Case</th>
+<th>Case ID</th>
 <th>Insurer</th>
 <th>Age</th>
 </tr>
 </thead>
 
 <tbody>
+
 <tr>
-<td>06609494</td>
+<td>06603678</td>
 <td>TNI</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>06607346</td>
+<td>VRI</td>
+<td>11</td>
+</tr>
+
+<tr>
+<td>06607954</td>
+<td>MTI</td>
 <td>10</td>
 </tr>
 
 <tr>
-<td>06588752</td>
-<td>MTI</td>
-<td>8</td>
+<td>06609041</td>
+<td>AAGI</td>
+<td>9</td>
 </tr>
 
-<tr>
-<td>06589186</td>
-<td>TNI</td>
-<td>8</td>
-</tr>
-
-<tr>
-<td>06589712</td>
-<td>AXA</td>
-<td>8</td>
-</tr>
 </tbody>
 
 </table>
@@ -283,61 +278,74 @@ Updated
 </div>
 
 <div class="card">
+
 <h3>Alerts</h3>
 
-<p><span class="alert-dot red"></span>4 cases aged 8-10 days</p>
+<p><span class="alert-dot red"></span>มีเคสอายุงานสูงสุด 15 วัน</p>
 <br>
 
-<p><span class="alert-dot yellow"></span>VRI highest volume (5 cases)</p>
+<p><span class="alert-dot yellow"></span>หลายเคสมีอายุเกิน 9 วัน</p>
 <br>
 
-<p><span class="alert-dot blue"></span>Follow-up required on approval cases</p>
+<p><span class="alert-dot blue"></span>ควรติดตาม SLA Risk อย่างใกล้ชิด</p>
 
 </div>
 
 </div>
 
 </div>
+
 <script>
 
-new Chart(document.getElementById('companyChart'), {
-    type:'bar',
-    data:{
-        labels:['VRI','AAGI','TNI','MTI','AXA'],
-        datasets:[{
-            label:'Cases',
-            data:[5,4,3,3,2],
-            backgroundColor:'#1976ff'
-        }]
-    }
+new Chart(document.getElementById('companyChart'),{
+type:'bar',
+data:{
+labels:['VRI','TNI','MTI','AAGI','AXA'],
+datasets:[{
+label:'Cases',
+data:[6,5,4,4,3],
+backgroundColor:'#1b8fff'
+}]
+}
 });
 
-new Chart(document.getElementById('statusChart'), {
-    type:'doughnut',
-    data:{
-        labels:['Open','Closed'],
-        datasets:[{
-            data:[18,4],
-            backgroundColor:['#1976ff','#8fd3ff']
-        }]
-    }
+new Chart(document.getElementById('statusChart'),{
+type:'doughnut',
+data:{
+labels:['Open Cases'],
+datasets:[{
+data:[27],
+backgroundColor:['#0f6fff']
+}]
+}
 });
 
-new Chart(document.getElementById('agingChart'), {
-    type:'bar',
-    data:{
-        labels:['0-1','2-3','4-5','6+'],
-        datasets:[{
-            data:[3,6,6,7],
-            backgroundColor:[
-                '#9bd5ff',
-                '#5eb0ff',
-                '#ffd84f',
-                '#ff9b55'
-            ]
-        }]
-    },
-    options:{
-        indexAxis:'y'
-    }
+new Chart(document.getElementById('agingChart'),{
+type:'bar',
+data:{
+labels:['0-3 Days','4-7 Days','8-10 Days','11+ Days'],
+datasets:[{
+label:'Cases',
+data:[8,9,6,4],
+backgroundColor:[
+'#8ED8FF',
+'#34A5FF',
+'#FFD84A',
+'#FF9F43'
+]
+}]
+},
+options:{
+indexAxis:'y',
+plugins:{
+legend:{
+display:false
+}
+}
+}
 });
+
+</script>
+
+</body>
+</html>
