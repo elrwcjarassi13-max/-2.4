@@ -97,6 +97,7 @@ body{
 
 .canvas-box{
     height:300px;
+    position:relative;
 }
 
 .lower-grid{
@@ -297,52 +298,53 @@ Updated
 </div>
 
 </div>
-
 <script>
 
 new Chart(document.getElementById('companyChart'), {
-type: 'bar',
-data: {
-labels: ['VRI','AAGI','TNI','MTI','AXA'],
-datasets: [{
-label: 'Cases',
-data: [5,4,3,3,2],
-backgroundColor: '#1976ff'
-}]
-}
+    type:'bar',
+    data:{
+        labels:['VRI','AAGI','TNI','MTI','AXA'],
+        datasets:[{
+            label:'Cases',
+            data:[5,4,3,3,2],
+            backgroundColor:'#1976ff'
+        }]
+    }
 });
 
 new Chart(document.getElementById('statusChart'), {
-type:'doughnut',
-data:{
-labels:['Open','Closed'],
-datasets:[{
-data:[18,4],
-backgroundColor:['#1976ff','#8fd3ff']
-}]
-}
+    type:'doughnut',
+    data:{
+        labels:['Open','Closed'],
+        datasets:[{
+            data:[18,4],
+            backgroundColor:['#1976ff','#8fd3ff']
+        }]
+    }
 });
 
 new Chart(document.getElementById('agingChart'), {
-type:'bar',
-data:{
-labels:['0-1','2-3','4-5','6+'],
-datasets:[{
-data:[3,6,6,7],
-backgroundColor:[
-'#9bd5ff',
-'#5eb0ff',
-'#ffd84f',
-'#ff9b55'
-]
-}]
-},
-options:{
-indexAxis:'y',
-plugins:{
-legend:{
-display:false
-}
-}
-}
+    type:'bar',
+    data:{
+        labels:['0-1','2-3','4-5','6+'],
+        datasets:[{
+            data:[3,6,6,7],
+            backgroundColor:[
+                '#9bd5ff',
+                '#5eb0ff',
+                '#ffd84f',
+                '#ff9b55'
+            ]
+        }]
+    },
+    options:{
+        indexAxis:'y',
+        plugins:{
+            legend:{
+                display:false
+            }
+        }
+    }
 });
+
+</script>
